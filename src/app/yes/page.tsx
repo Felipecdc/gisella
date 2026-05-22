@@ -52,7 +52,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center gap-4 min-w-40 max-h-16.75">
           <Link
-            href="./next"
+            href="/next"
             className="flex items-center justify-center bg-pink-600 hover:bg-pink-700 cursor-pointer text-white w-44 h-16 rounded-2xl text-2xl font-bold shadow-xl transition"
           >
             Próximo 💖
