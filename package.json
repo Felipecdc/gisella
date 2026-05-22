@@ -10,6 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
   },
+  "homepage": "https://felipecdc.github.io/gisella",
   "dependencies": {
     "next": "16.2.6",
     "react": "19.2.4",
