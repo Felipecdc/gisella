@@ -79,6 +79,9 @@ export default function Home() {
           lado, rir das coisas bobas com você e fazer nossa vida juntos ser leve
           e feliz ✨🫶
         </p>
+        <h1 className="text-xl font-bold text-pink-700 mb-4">
+          Feliz dia dos namorados, para nós!
+        </h1>
       </div>
     </main>
   );

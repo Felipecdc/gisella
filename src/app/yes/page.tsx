@@ -42,7 +42,7 @@ export default function Home() {
         <img src="/yes.gif" alt="cute home" className="w-64 mb-6 rounded-md" />
 
         <h1 className="text-2xl font-bold text-pink-700 mb-4">
-          Sabia que vc ainda tem amor pela vida, né? 😌
+          Sabia que vc ainda tem amor pela vida, né?! 😌
         </h1>
 
         <p className="text-sm text-pink-900 mb-10">

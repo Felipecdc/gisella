@@ -58,7 +58,11 @@ export default function Home() {
       <div className="z-10 flex flex-col items-center text-center p-4 max-w-100 bg-white rounded-4xl">
         <img src="/home.gif" alt="cute home" className="w-64 mb-6" />
 
-        <h1 className="text-3xl font-bold text-pink-700 mb-4">
+        <h1 className="text-3xl font-bold text-pink-700 mb-16">
+          Feliz dia dos namorados, meu amor! 💖
+        </h1>
+
+        <h1 className="text-xl font-bold text-pink-700 mb-4">
           Quer continuar namorando comigo?
         </h1>
 
