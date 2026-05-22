@@ -37,7 +37,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center p-5 bg-[#a3d7f0] overflow-hidden">
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#a3d7f0] p-4">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {hearts.map((heart) => (
           <span
@@ -55,32 +55,39 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="z-10 flex flex-col items-center text-center p-4 max-w-100 bg-white rounded-4xl">
-        <img src="/home.gif" alt="cute home" className="w-64 mb-6" />
+      <div className="z-10 flex w-full max-w-[420px] flex-col items-center rounded-[32px] bg-white p-6 text-center shadow-2xl">
+        <img
+          src="/home.gif"
+          alt="cute home"
+          className="mb-6 w-44 sm:w-56 md:w-64"
+        />
 
-        <h1 className="text-3xl font-bold text-pink-700 mb-16">
+        <h1 className="mb-10 text-2xl font-bold text-pink-700 sm:text-3xl">
           Feliz dia dos namorados, meu amor! 💖
         </h1>
 
-        <h1 className="text-xl font-bold text-pink-700 mb-4">
+        <h1 className="mb-4 text-lg font-bold text-pink-700 sm:text-xl">
           Quer continuar namorando comigo?
         </h1>
 
-        <p className="text-sm text-pink-900 mb-10">
+        <p className="mb-8 text-sm text-pink-900 sm:text-base">
           prometo continuar sendo fofo às vezes 😌
         </p>
 
-        <div className="flex items-center justify-center gap-4 min-w-40 max-h-16.75">
+        <div className="relative flex min-h-[140px] w-full flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/yes"
-            className="flex items-center justify-center bg-pink-600 hover:bg-pink-700 cursor-pointer text-white w-44 h-16 rounded-2xl text-2xl font-bold shadow-xl transition"
+            className="flex h-14 w-full max-w-[180px] items-center justify-center rounded-2xl bg-pink-600 text-lg font-bold text-white shadow-xl transition hover:bg-pink-700 sm:h-16 sm:text-2xl"
           >
             SIM 💖
           </Link>
-
-          {startedMoving && <div className="w-44 h-16" />}
+          {startedMoving && (
+            <div className="h-14 w-full max-w-[180px] sm:h-16" />
+          )}
           <button
             onMouseEnter={moveButton}
+            onTouchStart={moveButton}
+            onClick={moveButton}
             style={
               startedMoving
                 ? {
@@ -90,7 +97,7 @@ export default function Home() {
                   }
                 : {}
             }
-            className="bg-white text-pink-600 border-2 border-pink-400 w-44 h-16 rounded-2xl text-2xl font-bold shadow-xl transition"
+            className="h-14 w-full max-w-[180px] rounded-2xl border-2 border-pink-400 bg-white text-lg font-bold text-pink-600 shadow-xl transition sm:h-16 sm:text-2xl"
           >
             NÃO 😭
           </button>
