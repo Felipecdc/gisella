@@ -109,7 +109,7 @@ export default function Home() {
             <span className="relative z-10">Vc deixa tudo mais leve</span>
           </button>
 
-          <Link href={"/agree"} className={stylebutton}>
+          <Link href={"./agree"} className={stylebutton}>
             <span className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="relative z-10 text-lg">✨</span>
             <span className="relative z-10">Tudo e mais um pouco </span>
